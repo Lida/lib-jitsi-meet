@@ -204,7 +204,7 @@ export default class BrowserCapabilities extends BrowserDetection {
         // due in part to Safari only supporting H264 and the bridge sending VP8
         // Newer Safari support VP8 and other WebRTC features.
         return !this.isSafariWithWebrtc()
-            || (this.isSafariWithVP8() && this.usesPlanB());
+            || (this.isSafariWithVP8() && this.usesUnifiedPlan());
     }
 
     /**
